@@ -11,7 +11,6 @@
 #define SEALEVELPRESSURE_HPA (1013.25)
 #define LEDY 2
 #define LEDN 3 
-#define a 
 
 Adafruit_BME280 bme;
 unsigned long delayTime;
@@ -78,13 +77,10 @@ void LightIndicationYes() {
 }
 
 void LightIndicationNo() {
-   'a' = printValues();
-   if(!a){ 
    digitalWrite(LEDN, HIGH);
         delay(1000);
    digitalWrite(LEDN, LOW);
         delay(1000);
-   }
 }  
 
 //Temperature = -145.85 *C
