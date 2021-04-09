@@ -37,8 +37,8 @@ void setup() {
 void loop() {
     printValues();
     LightIndicationYes();
-    Serial.println();
     SendData();
+    Serial.println();
     delay(1000);
     
     }
@@ -80,6 +80,7 @@ void LightIndicationNo() {
 
 void SendData()
 {
+  
 if(Serial.available())
     {
       valLED = Serial.read();
