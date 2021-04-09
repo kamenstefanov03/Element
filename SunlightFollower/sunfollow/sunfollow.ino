@@ -30,4 +30,28 @@ void loop()
   val3 = analogRead(ldr3);
   val4 = analogRead(ldr4);
 
+  if(val1 > val2) 
+  {
+    pos = pos++;
+    delay(1000);
+  }
+  if(val2 > val1) 
+  {
+    pos = pos--;
+    delay(1000);
+  }
+
+  if(val3 > val4) 
+  {
+    pos = pos++;
+    delay(1000);
+  }
+  if(val4 > val3) 
+  {
+    pos = pos--;
+    delay(1000);
+  }
+  servo1.write(pos);
+  servo2.write(pos);
+
 }
