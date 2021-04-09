@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <SoftwareSerial.h>
-//SoftwareSerial BT(2, 3);
+SoftwareSerial BT(2, 3);
 
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
@@ -20,15 +20,15 @@ Adafruit_BME280 bme;
 char valLED;
 
 void setup() {
-  Serial.begin(9600);
+  BT.begin(9600);
   pinMode(LEDY, OUTPUT);
   pinMode(LEDN, OUTPUT);
   pinMode(LEDtest, OUTPUT);
-  Serial.println("Connected");   
-  Serial.println(F("BME280 Session"));
+  BT.println("Connected");   
+  BT.println(F("BME280 Session"));
 
   if (!bme.begin()) {
-    Serial.println("Could not find a valid BME280 sensor, check wiring!");
+    BT.println("Could not find a valid BME280 sensor, check wiring!");
     while (1);
     LightIndicationNo();
   }
@@ -37,33 +37,33 @@ void setup() {
 void loop() {
     printValues();
     LightIndicationYes();
-    Serial.println();
+    BT.println();
     SendData();
     delay(1000);
     
     }
 void printValues() {
-    Serial.print("Temperature = ");
-    Serial.print(bme.readTemperature());
-    Serial.println(" *C");
+    BT.print("Temperature = ");
+    BT.print(bme.readTemperature());
+    BT.println(" *C");
 
-    Serial.print("Pressure = ");
-    Serial.print(bme.readPressure() / 100.0F);
-    Serial.println(" hPa");
+    BT.print("Pressure = ");
+    BT.print(bme.readPressure() / 100.0F);
+    BT.println(" hPa");
 
-    Serial.print("Approx. Altitude = ");
-    Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
-    Serial.println(" m");
+    BT.print("Approx. Altitude = ");
+    BT.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+    BT.println(" m");
 
-    Serial.print("Humidity = ");
-    Serial.print(bme.readHumidity());
-    Serial.println(" %");
+    BT.print("Humidity = ");
+    BT.print(bme.readHumidity());
+    BT.println(" %");
 
-    Serial.println();
+    BT.println();
 }
 
 void LightIndicationYes() {
-   Serial.println();
+   BT.println();
    digitalWrite(LEDY, HIGH);
         delay(1000);
    digitalWrite(LEDY, LOW);
@@ -80,9 +80,9 @@ void LightIndicationNo() {
 
 void SendData()
 {
-if(Serial.available())
+if(BT.available())
     {
-      valLED = Serial.read();
+      valLED = BT.read();
     }
     if(valLED == 'H')
     {
@@ -96,4 +96,4 @@ if(Serial.available())
    //Serial.write(BT.read()); 
    //if (Serial.available()) 
    //BT.write(Serial.read());
-}  
+}   
