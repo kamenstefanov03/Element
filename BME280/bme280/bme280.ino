@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #include <Wire.h>
 #include <SPI.h>
@@ -79,6 +80,8 @@ void LightIndicationNo() {
 //Humidity = 100.00 %
 =======
 
+=======
+>>>>>>> bme280
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_Sensor.h>
