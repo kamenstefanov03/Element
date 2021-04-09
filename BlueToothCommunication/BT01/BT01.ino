@@ -24,7 +24,7 @@ void setup() {
   pinMode(LEDY, OUTPUT);
   pinMode(LEDN, OUTPUT);
   Serial.println("Connected");   
-  Serial.println(F("BME280"));
+  Serial.println(F("BME280 Session"));
 
   if (!bme.begin()) {
     Serial.println("Could not find a valid BME280 sensor, check wiring!");
@@ -83,11 +83,11 @@ if(Serial.available())
     {
       valLED = Serial.read();
     }
-    if(valLED = 'H')
+    if(valLED == 'H')
     {
       digitalWrite(LEDtest, HIGH);  
     }
-    if(valLED = 'L')
+    if(valLED == 'L')
     {
       digitalWrite(LEDtest, LOW);  
     }
