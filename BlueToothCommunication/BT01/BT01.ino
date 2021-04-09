@@ -23,6 +23,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(LEDY, OUTPUT);
   pinMode(LEDN, OUTPUT);
+  pinMode(LEDtest, OUTPUT);
   Serial.println("Connected");   
   Serial.println(F("BME280 Session"));
 
