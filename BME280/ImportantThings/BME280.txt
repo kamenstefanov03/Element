@@ -1,8 +1,1 @@
-<<<<<<< HEAD
-
-
-=======
-
-
->>>>>>> bme280
 The sea level pressure is different for every place, so it should be changed manually 
