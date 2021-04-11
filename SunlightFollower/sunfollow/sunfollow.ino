@@ -8,7 +8,8 @@ int ldr3 = A3;
 int ldr4 = A4;
 
 int val1, val2, val3, val4;
-int pos;
+int pos1;
+int pos2;
 int num = 2;
 
 void setup() 
@@ -19,8 +20,8 @@ void setup()
    pinMode(ldr2, INPUT);
    pinMode(ldr3, INPUT);
    pinMode(ldr4, INPUT);
-   servo1.write(pos);
-   servo2.write(pos);
+   servo1.write(pos1);
+   servo2.write(pos2);
 }
 
 void loop() 
@@ -32,26 +33,22 @@ void loop()
 
   if(val1 > val2) 
   {
-    pos = pos++;
-    delay(1000);
+    pos1 = pos1++;
   }
   if(val2 > val1) 
   {
-    pos = pos--;
-    delay(1000);
+    pos1 = pos1--;
   }
 
   if(val3 > val4) 
   {
-    pos = pos++;
-    delay(1000);
+    pos2 = pos2++;
   }
   if(val4 > val3) 
   {
-    pos = pos--;
-    delay(1000);
+    pos2 = pos2--;
   }
-  servo1.write(pos);
-  servo2.write(pos);
+  servo1.write(pos1);
+  servo2.write(pos2);
 
 }
