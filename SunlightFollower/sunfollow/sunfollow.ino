@@ -10,7 +10,7 @@ int ldr4 = A4;
 int val1, val2, val3, val4;
 int pos1;
 int pos2;
-int num = 2;
+int inpos = 90;
 
 void setup() 
 {
@@ -20,8 +20,8 @@ void setup()
    pinMode(ldr2, INPUT);
    pinMode(ldr3, INPUT);
    pinMode(ldr4, INPUT);
-   servo1.write(pos1);
-   servo2.write(pos2);
+   servo1.write(inpos);
+   servo2.write(inpos);
 }
 
 void loop() 
@@ -50,5 +50,6 @@ void loop()
   }
   servo1.write(pos1);
   servo2.write(pos2);
+  delay(100);
 
 }
