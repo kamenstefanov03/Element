@@ -38,8 +38,11 @@ void loop() {
     printValues();
     LightIndicationYes();
     BT.println();
+     Anometer();
+ 
     SendData();
     delay(1000);
+  
     
     }
 void printValues() {
@@ -97,3 +100,25 @@ if(BT.available())
    //if (Serial.available()) 
    //BT.write(Serial.read());
 }   
+
+
+
+
+
+void Anometer() 
+{
+  int anoLED = 9;
+  int AnometerValue = analogRead(A0);
+  analogWrite(anoLED, AnometerValue * (51.0 / 1023.0) * 50);
+
+  if(AnometerValue > 0)
+  {
+    BT.println(AnometerValue);
+    BT.print("");
+  }
+  if(AnometerValue <= 30)
+  {
+    BT.println("Weak wind");
+  }
+
+}
