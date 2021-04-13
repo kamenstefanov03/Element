@@ -101,10 +101,6 @@ if(BT.available())
    //BT.write(Serial.read());
 }   
 
-
-
-
-
 void Anometer() 
 {
   int anoLED = 9;
