@@ -19,6 +19,8 @@ Adafruit_BME280 bme;
 
 char valLED;
 
+int AnometerValue = analogRead(A0);
+
 void setup() {
   BT.begin(9600);
   pinMode(LEDY, OUTPUT);
@@ -38,9 +40,9 @@ void loop() {
     printValues();
     LightIndicationYes();
     BT.println();
-     Anometer();
- 
-    SendData();
+    Anometer();
+    WeatherPredict();
+    testLED();
     delay(1000);
   
     
@@ -81,7 +83,7 @@ void LightIndicationNo() {
         delay(1000);
 }
 
-void SendData()
+void testLED()
 {
 if(BT.available())
     {
@@ -104,7 +106,6 @@ if(BT.available())
 void Anometer() 
 {
   int anoLED = 9;
-  int AnometerValue = analogRead(A0);
   analogWrite(anoLED, AnometerValue * (51.0 / 1023.0) * 50);
 
   if(AnometerValue > 0)
@@ -117,4 +118,15 @@ void Anometer()
     BT.println("Weak wind");
   }
 
+}
+
+void WeatherPredict()
+{
+   if(bme.readPressure() < 20 && bme.readHumidity() < 10)
+   {
+    BT.println("ok");
+   }
+ 
+   
+   
 }
