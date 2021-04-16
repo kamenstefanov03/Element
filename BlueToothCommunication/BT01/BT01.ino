@@ -123,13 +123,16 @@ void Anometer()
 void WeatherPredict()
 {
    //if(bme.readPressure() < 20 && bme.readHumidity() < 10)
-   double SEALEVELPRESSURE, pres, alt = 595, t, z = 2; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
+   double SEALEVELPRESSURE, SEALEVELPRESSUREOK, pres, alt = 595, t, z = 0; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
    char summer;
    char winter;
    t = bme.readTemperature();
    pres = bme.readPressure();
    SEALEVELPRESSURE = pres*(1-(0.0065*alt)/(t+0.0065*alt+273.15));
-  
+   SEALEVELPRESSUREOK = pow(SEALEVELPRESSURE, -5.257);
+   z = 147 - (5*SEALEVELPRESSUREOK/376);
+   BT.println(z);
+   
    // Below are the results 
 
    if(z = 1)
