@@ -108,11 +108,18 @@ void Anometer()
     BT.println(AnometerValue);
     BT.print("");
   }
-  /*if(AnometerValue <= 30)
+  if(AnometerValue <= 30)
   {
     BT.println("Weak wind");
-  }*/
-
+  }
+  if(AnometerValue >= 30 && AnometerValue <= 120)
+  {
+    BT.println("Medium wind");
+  }
+  if(AnometerValue >= 120 && AnometerValue <= 170)
+  {
+    BT.println("Strong wind");
+  }
 }
 
 void WeatherPredict()
