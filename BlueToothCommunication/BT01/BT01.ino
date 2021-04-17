@@ -146,119 +146,119 @@ void WeatherPredict()
    }
    else if(z == 4)
    {
-    BT.println("");
+    BT.println("Fairly Fine Showery Later");
    }
    else if(z == 5)
    {
-    BT.println("");
+    BT.println("Showery Becoming more unsettled");
    }
    else if(z == 6)
    {
-    BT.println("");
+    BT.println("Unsettled, Rain later");
    }
    else if(z == 7)
    {
-    BT.println("");
+    BT.println("Rain at times, worse later.");
    }
    else if(z == 8)
    {
-    BT.println("");
+    BT.println("Rain at times, becoming very unsettled");
    }
    else if(z == 9)
    {
-    BT.println("");
+    BT.println("Very Unsettled, Rain");
    }
    else if(z == 10)
    {
-    BT.println("");
+    BT.println("Settled Fine");
    }
    else if(z == 11)
    {
-    BT.println("");
+    BT.println("Fine Weather");
    }
    else if(z == 12)
    {
-    BT.println("");
+    BT.println("Fine, Possibly showers");
    }
    else if(z == 13)
    {
-    BT.println("");
+    BT.println("Fairly Fine, Showers likely");
    }
    else if(z == 14)
    {
-    BT.println("");
+    BT.println("Showery Bright Intervals");
    }
    else if(z == 15)
    {
-    BT.println("");
+    BT.println("Changeable some rain");
    }
    else if(z == 16)
    {
-    BT.println("");
+    BT.println("Unsettled, rain at times");
    }
    else if(z == 17)
    {
-    BT.println("");
+    BT.println("Rain at Frequent Intervals");
    }
    else if(z == 18)
    {
-    BT.println("");
+    BT.println("Very Unsettled, Rain");
    }
    else if(z == 19)
    {
-    BT.println("");
+    BT.println("Stormy, much rain");
    }
    else if(z == 20)
    {
-    BT.println("");
+    BT.println("Settled Fine");
    }
    else if(z == 21)
    {
-    BT.println("");
+    BT.println("Fine Weather");
    }
    else if(z == 22)
    {
-    BT.println("");
+    BT.println("Becoming Fine");
    }
    else if(z == 23)
    {
-    BT.println("");
+    BT.println("Fairly Fine, Improving");
    }
    else if(z == 24)
    {
-    BT.println("");
+    BT.println("Fairly Fine, Possibly showers, early");
    }
    else if(z == 25)
    {
-    BT.println("");
+    BT.println("Showery Early, Improving");
    }
    else if(z == 26)
    {
-    BT.println("");
+    BT.println("Changeable Mending");
    }
    else if(z == 27)
    {
-    BT.println("");
+    BT.println("Rather Unsettled Clearing Later");
    }
    else if(z == 28)
    {
-    BT.println("");
+    BT.println("Unsettled, Probably Improving");
    }
    else if(z == 29)
    {
-    BT.println("");
+    BT.println("Unsettled, short fine Intervals");
    }
    else if(z == 30)
    {
-    BT.println("");
+    BT.println("Very Unsettled, Finer at times");
    }
    else if(z == 31)
    {
-    BT.println("");
+    BT.println("Stormy, possibly improving");
    }
    else if(z == 32)
    {
-    BT.println("");
+    BT.println("Stormy, much rain");
    }
    else
    {
