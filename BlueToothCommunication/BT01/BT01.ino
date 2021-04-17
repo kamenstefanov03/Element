@@ -14,7 +14,6 @@ SoftwareSerial BT(2, 3);
 #define BME_MISO 12
 #define BME_MOSI 11
 #define BME_CS 10
-#define SEALEVELPRESSURE_HPA (1010) //this is the Sea level pressure
 Adafruit_BME280 bme;
 
 char valLED;
@@ -55,10 +54,6 @@ void printValues() {
     BT.print("Pressure = ");
     BT.print(bme.readPressure() / 100.0F);
     BT.println(" hPa");
-
-    BT.print("Approx. Altitude = ");
-    BT.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
-    BT.println(" m");
 
     BT.print("Humidity = ");
     BT.print(bme.readHumidity());
@@ -122,14 +117,16 @@ void Anometer()
 
 void WeatherPredict()
 {
-   //if(bme.readPressure() < 20 && bme.readHumidity() < 10)
-   double SEALEVELPRESSURE, SEALEVELPRESSUREOK, pres, alt = 595, t, z = 0; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
+   double SEALEVELPRESSURE = 0, pres, alt = 595, t, z = 0; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
    char summer;
    char winter;
    t = bme.readTemperature();
    pres = bme.readPressure();
+   BT.println(SEALEVELPRESSURE);
    SEALEVELPRESSURE = pres*(1-(0.0065*alt)/(t+0.0065*alt+273.15));
-   SEALEVELPRESSUREOK = pow(SEALEVELPRESSURE, -5.257);
+   BT.println(SEALEVELPRESSURE);
+   double SEALEVELPRESSUREOK = pow(SEALEVELPRESSURE, -5.275);
+   BT.println(SEALEVELPRESSUREOK);
    z = 147 - (5*SEALEVELPRESSUREOK/376);
    BT.println(z);
    
