@@ -101,22 +101,22 @@ if(BT.available())
 void Anometer() 
 {
   int anoLED = 9;
+  int AnometerValue = analogRead(A0);
   analogWrite(anoLED, AnometerValue * (51.0 / 1023.0) * 50);
 
-  if(AnometerValue > 0)
+  if(AnometerValue == 0)
   {
-    BT.println(AnometerValue);
-    BT.print("");
+    BT.println("No wind");
   }
-  if(AnometerValue <= 30)
+  if(AnometerValue > 0 && AnometerValue <= 70)
   {
     BT.println("Weak wind");
   }
-  if(AnometerValue >= 30 && AnometerValue <= 120)
+  if(AnometerValue >= 70 && AnometerValue <= 160)
   {
     BT.println("Medium wind");
   }
-  if(AnometerValue >= 120 && AnometerValue <= 170)
+  if(AnometerValue >= 160 && AnometerValue <= 330)
   {
     BT.println("Strong wind");
   }
@@ -124,18 +124,19 @@ void Anometer()
 
 void WeatherPredict()
 {
-   float SEALEVELPRESSURE = 0, pres, alt = 595, t, z = 0; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
+   float SEALEVELPRESSURE = 0, pres, alt = 595, t, z = 0, SEALEVELPRESSURE_mmHg; // pres- measured pressure, t- temperature in Celsius, alt- altitude in meters(here is for Sofia, Bulgaria)
    char summer;
    char winter;
    t = bme.readTemperature();
-   pres = bme.readPressure() / 100.0;
-   BT.println(SEALEVELPRESSURE);
+   pres = bme.readPressure();
+   
    SEALEVELPRESSURE = pres*(1-(0.0065*alt)/(t+0.0065*alt+273.15));
-   BT.println(SEALEVELPRESSURE);
-   double SEALEVELPRESSUREOK = pow(SEALEVELPRESSURE, -2); //5.275
-   BT.println(SEALEVELPRESSUREOK);
-   z = 147 - (5*SEALEVELPRESSUREOK/376);
-   BT.println(z);
+   
+   SEALEVELPRESSURE_mmHg = SEALEVELPRESSURE / 133.22; //converting Pascals into mmHg: mmHg = hPa /  133, 322
+   
+   
+   z = 147 - (5*SEALEVELPRESSURE_mmHg/376);
+   z = 1;
    
    // Below are the results 
 
@@ -203,14 +204,14 @@ void WeatherPredict()
    {
     BT.println("Unsettled, rain at times");
    }
+    BT.println("Very Unsettled, Rain");
+   }
    else if(z == 17)
    {
     BT.println("Rain at Frequent Intervals");
    }
    else if(z == 18)
    {
-    BT.println("Very Unsettled, Rain");
-   }
    else if(z == 19)
    {
     BT.println("Stormy, much rain");
