@@ -15,6 +15,16 @@
   (Folder "Outputs")
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (VCC
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (A000067
+      (FullPartName "A000067.Normal")
+      (LibraryName "D:\DOWNLOADS\A000067\A000067.OLB")
+      (DeviceIndex "0"))
     (LED
       (FullPartName "LED.Normal")
       (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -32,10 +42,15 @@
       (LibraryName
          "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\KAMEN_STEFANOV.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "C:\OrCAD\OrCAD_10.5\tools\capture\library")
+  (LastUsedLibraryBrowseDirectory "D:\Downloads\A000067")
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Admin\Desktop\WeatherStation\WeatherStation-\Schematic\Capture\weatherstation.dsn")
+      (Path "Design Resources"
+         "C:\Users\Admin\Desktop\WeatherStation\WeatherStation-\Schematic\Capture\weatherstation.dsn"
+         "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
          "c:\orcad\orcad_10.5\tools\capture\library\kamen_stefanov.olb")
@@ -45,28 +60,17 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 0 694 -8 -31 0 200 0 451"))
+        (Placement "44 2 3 0 694 -8 -31 0 200 0 451"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 398 694 -8 -31 78 1376 78 568")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Placement "44 2 1 0 910 -8 -31 78 1376 78 568")
+        (Scroll "0 392")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrPartDoc")
-      (Frame
-        (Placement "44 0 1 597 694 -8 -31 234 1536 234 728")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "325 0")
-        (Zoom "152"))
-      (Path "D:\DOWNLOADS\ARDUINO_PRO_MINI\ARDUINO_PRO_MINI.OLB")
-      (Package "ARDUINO_PRO_MINI")))
+      (Page "PAGE1")))
   (MPSSessionName "Admin"))
