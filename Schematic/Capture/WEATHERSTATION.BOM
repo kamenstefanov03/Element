@@ -7,7 +7,7 @@
 
 
 
-Bill Of Materials            May 11,2021      1:18:37	Page1
+Bill Of Materials            May 11,2021      2:11:03	Page1
 
 Item	Quantity	Reference	Part
 ______________________________________________
@@ -17,8 +17,8 @@ ______________________________________________
 3	1	D3	LED_test	
 4	2	LDR1,LDR2	LDR1201	
 5	2	R1,R2	10k	
-6	1	U1	HC-05	
-7	1	U2	ARDUINO_PRO_MINI	
-8	1	U3	BME280	
+6	1	U2	ARDUINO_PRO_MINI	
+7	1	U3	BME280	
+8	1	U4	HC-05	
 9	1	1	SERVO	
 10	1	2	DC-Motor	
