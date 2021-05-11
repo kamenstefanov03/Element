@@ -11,10 +11,73 @@
     (File ".\weatherstation.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
-  (Folder "Outputs")
+    (CompileFileAddedOrDeleted "x")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{Reference}\t{Value}\t{PCBFootprint}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE")
+    (CrossRef_Scope "0")
+    (Crossref__Mode "0")
+    (CrossRef_Sorting "0")
+    (CrossRef_Destination_File
+       "C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION.XRF")
+    (CrossRef_XY "FALSE")
+    (CrossRef_Unused "FALSE")
+    (XRF_View_Output "FALSE")
+    (Netlist_TAB "3")
+    (LAYOUT_Netlist_File "WEATHERSTATION.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (FALSE)
+    (LAYOUT_Units "0")
+    (FALSE)
+    ( "FALSE"))
+  (Folder "Outputs"
+    (File ".\weatherstation.bom"
+      (Type "Report"))
+    (File ".\weatherstation.xrf"
+      (Type "Report"))
+    (File ".\weatherstation.mnl"
+      (Type "LAYOUT Netlist File")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    ("HEADER 3"
+      (FullPartName "HEADER 3.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (HC-05
+      (FullPartName "HC-05.Normal")
+      (LibraryName "D:\DOWNLOADS\HC-05\HC-05.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LDR1201
+      (FullPartName "LDR1201.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DI.OLB")
+      (DeviceIndex "0"))
+    (DC-Motor
+      (FullPartName "DC-Motor.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\KAMEN_STEFANOV.OLB")
+      (DeviceIndex "0"))
+    (SERVO
+      (FullPartName "SERVO.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\KAMEN_STEFANOV.OLB")
+      (DeviceIndex "0"))
     (VCC
       (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -42,32 +105,31 @@
       (LibraryName
          "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\KAMEN_STEFANOV.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "D:\Downloads\A000067")
+  (LastUsedLibraryBrowseDirectory "D:\Downloads\HC-05")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\Users\Admin\Desktop\WeatherStation\WeatherStation-\Schematic\Capture\weatherstation.dsn")
-      (Path "Design Resources"
-         "C:\Users\Admin\Desktop\WeatherStation\WeatherStation-\Schematic\Capture\weatherstation.dsn"
-         "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
          "c:\orcad\orcad_10.5\tools\capture\library\kamen_stefanov.olb")
       (Path "Design Resources" "Library"
-         "d:\downloads\arduino_pro_mini\arduino_pro_mini.olb"))
+         "d:\downloads\arduino_pro_mini\arduino_pro_mini.olb")
+      (Path "Outputs")
+      (Select "Design Resources" "Library"
+         "c:\orcad\orcad_10.5\tools\capture\library\kamen_stefanov.olb"
+         "Library Cache"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 0 694 -8 -31 0 200 0 451"))
+        (Placement "44 2 3 0 694 -8 -31 0 263 0 451"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 1 0 910 -8 -31 78 1376 78 568")
-        (Scroll "0 392")
-        (Zoom "200")
+        (Placement "44 0 1 -1 -1 -8 -31 741 1889 -2 936")
+        (Scroll "0 48")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION.DSN")
