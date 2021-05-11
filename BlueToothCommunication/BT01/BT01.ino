@@ -136,7 +136,7 @@ void WeatherPredict()
    
    
    z = 147 - (5*SEALEVELPRESSURE_mmHg/376);
-   
+   z = 1;
    
    // Below are the results 
   if(z == 1)
