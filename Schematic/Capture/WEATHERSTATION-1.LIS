@@ -1,0 +1,157 @@
+Post Processor Report
+OrCAD FILE: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.MAX
+Tue May 11 10:39:03 2021
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.TOP
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.TOP:
+---------------------------------------------------------
+D10:  0.0620 ROUND  --       0 Draws,      45 Flashes
+D11:  0.0620 SQUARE --       0 Draws,      16 Flashes
+D12:  0.0450 ROUND  --       0 Draws,       4 Flashes
+D13:  0.0120 ROUND  --      41 Draws,       0 Flashes
+---------------------------------------------------------
+  4 D-Codes      -----      41 Draws,      65 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.BOT
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.BOT:
+---------------------------------------------------------
+D13:  0.0120 ROUND  --      59 Draws,       0 Flashes
+D14:  0.0620 ROUND  --       0 Draws,      50 Flashes
+D15:  0.0620 SQUARE --       0 Draws,      11 Flashes
+D16:  0.0450 ROUND  --       0 Draws,       4 Flashes
+---------------------------------------------------------
+  4 D-Codes      -----      59 Draws,      65 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.GND
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.GND:
+---------------------------------------------------------
+D17:  0.0700 ROUND  --       0 Draws,      10 Flashes
+D18:  0.0820 ROUND  --       0 Draws,      40 Flashes
+D19:  0.0820 SQUARE --       0 Draws,      11 Flashes
+D20:  0.0650 ROUND  --       0 Draws,       4 Flashes
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+---------------------------------------------------------
+  5 D-Codes      -----       4 Draws,      65 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.PWR
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.PWR:
+---------------------------------------------------------
+D18:  0.0820 ROUND  --       0 Draws,      40 Flashes
+D19:  0.0820 SQUARE --       0 Draws,      11 Flashes
+D20:  0.0650 ROUND  --       0 Draws,       4 Flashes
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+---------------------------------------------------------
+  4 D-Codes      -----       4 Draws,      55 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SMT
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SMT:
+---------------------------------------------------------
+D14:  0.0620 ROUND  --       0 Draws,      40 Flashes
+D15:  0.0620 SQUARE --       0 Draws,      11 Flashes
+D16:  0.0450 ROUND  --       0 Draws,       4 Flashes
+D22:  0.0670 ROUND  --       0 Draws,       5 Flashes
+D23:  0.0670 SQUARE --       0 Draws,       5 Flashes
+---------------------------------------------------------
+  5 D-Codes      -----       0 Draws,      65 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SMB
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SMB:
+---------------------------------------------------------
+D14:  0.0620 ROUND  --       0 Draws,      40 Flashes
+D15:  0.0620 SQUARE --       0 Draws,      11 Flashes
+D16:  0.0450 ROUND  --       0 Draws,       4 Flashes
+D22:  0.0670 ROUND  --       0 Draws,      10 Flashes
+---------------------------------------------------------
+  4 D-Codes      -----       0 Draws,      65 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SST
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.SST:
+---------------------------------------------------------
+D24:  0.0100 ROUND  --      93 Draws,       0 Flashes
+D25:  0.0080 ROUND  --     318 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----     411 Draws,       0 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.AST
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.AST:
+---------------------------------------------------------
+D14:  0.0620 ROUND  --       0 Draws,      40 Flashes
+D15:  0.0620 SQUARE --       0 Draws,      11 Flashes
+D16:  0.0450 ROUND  --       0 Draws,       4 Flashes
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D24:  0.0100 ROUND  --      93 Draws,       0 Flashes
+D25:  0.0080 ROUND  --     831 Draws,       0 Flashes
+---------------------------------------------------------
+  6 D-Codes      -----     928 Draws,      55 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.DRD
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.DRD:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D24:  0.0100 ROUND  --     597 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----     601 Draws,       0 Flashes
+
+*********************************************************
+
+Output file: C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.FAB
+
+Aperture totals for C:\USERS\ADMIN\DESKTOP\WEATHERSTATION\WEATHERSTATION-\SCHEMATIC\CAPTURE\WEATHERSTATION-1.FAB:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+---------------------------------------------------------
+  1 D-Codes      -----       4 Draws,       0 Flashes
+
+
+*********************************************************
+
+Aperture totals for entire project:
+---------------------------------------------------------
+D10:  0.0620 ROUND  --       0 Draws,      45 Flashes
+D11:  0.0620 SQUARE --       0 Draws,      16 Flashes
+D12:  0.0450 ROUND  --       0 Draws,       4 Flashes
+D13:  0.0120 ROUND  --     100 Draws,       0 Flashes
+D14:  0.0620 ROUND  --       0 Draws,     170 Flashes
+D15:  0.0620 SQUARE --       0 Draws,      44 Flashes
+D16:  0.0450 ROUND  --       0 Draws,      16 Flashes
+D17:  0.0700 ROUND  --       0 Draws,      10 Flashes
+D18:  0.0820 ROUND  --       0 Draws,      80 Flashes
+D19:  0.0820 SQUARE --       0 Draws,      22 Flashes
+D20:  0.0650 ROUND  --       0 Draws,       8 Flashes
+D21:  0.0500 ROUND  --      20 Draws,       0 Flashes
+D22:  0.0670 ROUND  --       0 Draws,      15 Flashes
+D23:  0.0670 SQUARE --       0 Draws,       5 Flashes
+D24:  0.0100 ROUND  --     783 Draws,       0 Flashes
+D25:  0.0080 ROUND  --    1149 Draws,       0 Flashes
+---------------------------------------------------------
+ 16 D-Codes      -----    2052 Draws,     435 Flashes
+
+
+No warnings or errors.
